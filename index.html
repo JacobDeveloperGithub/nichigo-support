@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy, support, and vocabulary source information for NichiGo.">
+  <meta name="color-scheme" content="light dark">
+  <title>NichiGo — Privacy & Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f3ed;
+      --surface: #ffffff;
+      --text: #171715;
+      --muted: #68655e;
+      --border: #d8d4ca;
+      --accent: #24513a;
+      --shadow: 0 16px 45px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #10110f;
+        --surface: #191b18;
+        --text: #f2f0e9;
+        --muted: #aaa69b;
+        --border: #343830;
+        --accent: #9bc9a7;
+        --shadow: 0 16px 45px rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 56px auto;
+    }
+
+    header, section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    header { padding: 40px; }
+
+    section {
+      margin-top: 18px;
+      padding: 34px 40px;
+      scroll-margin-top: 18px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 7vw, 3.25rem);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      margin: 30px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    p { margin: 0 0 16px; }
+
+    p:last-child { margin-bottom: 0; }
+
+    .subtitle, .updated, footer { color: var(--muted); }
+
+    .updated {
+      margin-top: 18px;
+      font-size: 0.9rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      margin-top: 28px;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    nav a { font-weight: 700; }
+
+    ul {
+      margin: 10px 0 18px;
+      padding-left: 24px;
+    }
+
+    li + li { margin-top: 7px; }
+
+    .button {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 11px 16px;
+      border-radius: 12px;
+      background: var(--text);
+      color: var(--surface);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 28px 10px 8px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 560px) {
+      main { margin: 20px auto; }
+      header, section { padding: 26px 22px; border-radius: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>NichiGo</h1>
+      <p class="subtitle">Privacy, support, and vocabulary source information for the offline JLPT flashcard app.</p>
+      <p class="updated">Effective September 13, 2026</p>
+      <nav aria-label="Page sections">
+        <a href="#privacy">Privacy</a>
+        <a href="#sources">Sources & licenses</a>
+        <a href="#support">Support</a>
+      </nav>
+    </header>
+
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+
+      <h3>Information NichiGo stores</h3>
+      <p>NichiGo does not require an account and contains no advertising, analytics, or third-party tracking. Study progress, preferences, and quiz history are stored locally on your device. The developer does not operate an account or analytics server and does not receive this local study data.</p>
+
+      <h3>Widgets</h3>
+      <p>Current-word and schedule information is shared locally with NichiGo’s iOS widget extension through the app’s private App Group container. This information is used only to display and update NichiGo widgets on your device.</p>
+
+      <h3>Notifications</h3>
+      <p>New-word notifications are optional and are scheduled on your device after you grant permission. You can disable them in NichiGo or revoke notification permission in iOS Settings.</p>
+
+      <h3>Optional tips</h3>
+      <p>Optional tips are consumable In-App Purchases processed by Apple. Tips do not unlock features. NichiGo does not receive or store your payment-card information. Apple processes purchases under <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple’s Privacy Policy</a>.</p>
+
+      <h3>External links</h3>
+      <p>Links to source repositories, licenses, Apple, or GitHub open outside NichiGo. Those services may handle information according to their own privacy policies.</p>
+
+      <h3>Retention and deletion</h3>
+      <p>Your study information remains on your device until you reset progress or delete the app. Reset Progress clears local learning history. Deleting NichiGo removes its remaining local app data. Because NichiGo has no user accounts or remote user profiles, there is no server-side profile to retrieve or delete.</p>
+
+      <h3>Changes to this policy</h3>
+      <p>If NichiGo’s data practices change, this page and the in-app notice will be updated with a new effective date.</p>
+    </section>
+
+    <section id="sources">
+      <h2>Vocabulary Sources & Licenses</h2>
+      <p>The Japanese Language Proficiency Test does not publish official vocabulary lists. NichiGo’s level assignments are community estimates based on human-created vocabulary lists, and NichiGo is not affiliated with or endorsed by the Japan Foundation, Japan Educational Exchanges and Services, or the JLPT.</p>
+
+      <p>Source entries and definitions were retained without substantive rewriting. Local processing normalized formatting, capitalization, and punctuation; removed duplicate cards; and generated accepted-answer variants required for quiz functionality.</p>
+
+      <h3>Source material</h3>
+      <ul>
+        <li>Jonathan Waller’s <a href="https://www.tanos.co.uk/jlpt/" rel="noopener noreferrer">JLPT Resources</a>, shared under Creative Commons Attribution terms described on the source’s <a href="https://www.tanos.co.uk/jlpt/sharing/" rel="noopener noreferrer">sharing page</a>.</li>
+        <li>N5 data based on Waller’s lists as mapped to JMdict by <a href="https://github.com/stephenmk/yomitan-jlpt-vocab" rel="noopener noreferrer">stephenmk/yomitan-jlpt-vocab</a>, distributed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+        <li>N4–N1 data based on corresponding Waller-source rows and JMdict mappings from <a href="https://github.com/chenyanming/yomichan-jlpt-vocab" rel="noopener noreferrer">chenyanming/yomichan-jlpt-vocab</a>. JMdict-derived material is provided under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener noreferrer">CC BY-SA 3.0</a>.</li>
+      </ul>
+
+      <p>These attributions identify the original sources, applicable licenses, and NichiGo’s normalization, deduplication, and quiz-answer additions.</p>
+    </section>
+
+    <section id="support">
+      <h2>Support</h2>
+      <p>For help, bug reports, data corrections, or privacy questions, open a public issue in the NichiGo support repository. Please do not include private or sensitive information.</p>
+      <a class="button" href="https://github.com/JacobDeveloperGithub/nichigo-support/issues/new" rel="noopener noreferrer">Open a support issue</a>
+    </section>
+
+    <footer>
+      <p>© 2026 NichiGo</p>
+    </footer>
+  </main>
+</body>
+</html>
